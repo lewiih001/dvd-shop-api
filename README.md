@@ -2,10 +2,14 @@
 
 
 Creating a Rails API from Scratch
+
 Learning Goals
+
 Use the --api flag to create an API-only Rails app
+
 Use the resource generator
 Introduction
+
 We've spent a lot of time now focusing on the backend, and now's a great opportunity to see what we can actually do with all the power of a Rails API to support a frontend application as well.
 
 Throughout this section, we'll be building a DVD shop. We'll have a Rails API to support a React frontend application, and we'll be focusing on how that client-server communication process works, as well as some challenges involved in communicating between two separate applications.
@@ -16,7 +20,9 @@ Generating a Rails API
 Just like we saw at the beginning of the phase, we can use rails new to generate a new Rails application. We'll run that same command with a few additional options to optimize our Rails app. Let's generate the backend code for our dvd-shop. Use cd .. to navigate out of the lab directory, and run:
 
 $ rails new dvd-shop --api --minimal
+
 --api: this flag will create our new application with some additional API-specific configuration, and will skip the code for generating .erb files with ActionView.
+
 --minimal: this flag skips a lot of additional Rails features that we won't use in our API, such as code for sending emails and processing images. Read more about the --minimal flag.
 The reason we ask you to cd out of the lab directory is because when you generate a new Rails project, it will automatically create a new Git repository for your Rails project. Since the lab directory is already a Git repository, it's better to create this new project in its own directory, so you don't end up with nested Git repositories.
 
